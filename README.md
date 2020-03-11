@@ -1,7 +1,17 @@
 <h1>TrainerHero</h1>
 
 <li>Käyttäjä voi palvelun avulla suunnitella ja pitää kirjaa treenisuorituksista</li>
-<li>Palvelun pääpainona on kuntosaliharjoittelu, mutta tarkoituksena on lisätä myös mahdollisuus juoksulle, pyöräilylle ja uinnille</li>
-<li>Käyttäjä voi suunnitella valmiita treeniohjelmia lisäämällä mahdollisia liikkeitä salilla ja sen jälkeen kirjata tuloksia näihin ohjelmiin</li>
+<li>Palvelun pääpainona on kuntosaliharjoittelu</li>
+<li>Käyttäjä voi suunnitella valmiita treeniohjelmia lisäämällä mahdollisia liikkeitä salilla. Liikkeiden tiedot voi täyttää itse tai käyttää pääkäyttäjän tekemiä globaaleja liikkeitä. Jos päättää itse täyttää liikkeen tiedot, niin pitää valita mitä lihasryhmää harjoitellaan ja nimi</li>
+<li>Käyttäjä voi kirjata treenin. Tähän lisätään treenipäivä, tehtävät liikkeet, toistot, painot, kommentti, treenasiko yksin vai jonkun kanssa</li>
 <li>Käyttäjä pystyy seuraamaan yksittäisten liikkeiden tuloksia</li>
+<h2>Toimintoja:</h2>
+<li>Profiilin luonti</li>
+<li>Yksittäisten liikeiden lisääminen</li>
+<li>Yksittäisten liikeiden poistaminen</li>
+<li>Treeniohjelmien rakentaminen</li>
+<li>Treeniohjelmien poistaminen</li>
+<li>Treenisuorituksen lisääminen</li>
+<li>Treenisuorituksen poistaminen</li>
+<li>Tulosten seuranta erilaisessa muodossa</li>
 
