@@ -6,7 +6,7 @@
 <li>Käyttäjä voi kirjata treenin. Tähän lisätään treenipäivä, tehtävät liikkeet, toistot, painot, kommentti, treenasiko yksin vai jonkun kanssa</li>
 <li>Käyttäjä pystyy seuraamaan yksittäisten liikkeiden tuloksia</li>
 <h2>Toimintoja:</h2>
-<li>Profiilin luonti</li>
+<li>Profiilin luonti ja poistaminen</li>
 <li>Yksittäisten liikeiden lisääminen</li>
 <li>Yksittäisten liikeiden poistaminen</li>
 <li>Treeniohjelmien rakentaminen</li>
@@ -14,4 +14,6 @@
 <li>Treenisuorituksen lisääminen</li>
 <li>Treenisuorituksen poistaminen</li>
 <li>Tulosten seuranta erilaisessa muodossa</li>
+<li>Pääkäyttäjä voi lisätä lihasryhmiä</li>
+<li>Pääkäyttäjä voi lisätä liikkeitä</li>
 
