@@ -18,4 +18,4 @@
 <li>Pääkäyttäjä voi lisätä liikkeitä</li>
 
 <h2>Tietokantakaavio</h2>
-![Image description](https://github.com/jkukko/TrainerHero/blob/master/Tietokantakuvio.png)
+![Image description](https://github.com/jkukko/TrainerHero/blob/master/to/Tietokantakuvio.png)
