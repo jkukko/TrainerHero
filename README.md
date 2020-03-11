@@ -17,3 +17,5 @@
 <li>Pääkäyttäjä voi lisätä lihasryhmiä</li>
 <li>Pääkäyttäjä voi lisätä liikkeitä</li>
 
+<h2>Tietokantakaavio</h2>
+![Image description](https://github.com/jkukko/TrainerHero/blob/master/Untitled%20Diagram.png)
