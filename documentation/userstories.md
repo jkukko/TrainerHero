@@ -1,7 +1,7 @@
 <h1>User Stories</h1>
 <h2>Tunnutksen luominen ja kirjautuminen</h2>
-Käyttäjä luo itselleen tunnuksen
-Käyttäjä luo kirjatuu sovellukseen 
+<p>Käyttäjä luo itselleen tunnuksen</p>
+<p>Käyttäjä luo kirjatuu sovellukseen</p> 
 <h2>Liikkeiden ja treenien luonti</h2>
 Käyttäjä luo uusi liikkeitä
 Käyttäjä poistaa liikkeen
