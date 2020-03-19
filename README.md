@@ -20,3 +20,5 @@
 <h2>Tietokantakaavio</h2>
 https://github.com/jkukko/TrainerHero/blob/master/Tietokantakuvio.png
 
+<h2>Linkki herokuun</h2>
+https://trainerhero.herokuapp.com/
