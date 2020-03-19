@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block body %}
+  <table>
+    <tr>
+      <th>Movement</th>
+      <th>Muscle Group</th>
+      <th>Is this basic movement</th>
+    </tr>
+    {% for movement in movements %}
+    <tr>
+      <td>{{ movement.name }}</td>
+      <td>{{ movement.muscleGroup }}</td>
+      <td>{{ movement.isTemplate }}</td>
+      <td>
+          <form method="POST" action="{{ url_for('add_movement_template', movement_id=movement.id) }}">
+            <input type="submit" value="Change status"/>
+          </form>
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+{% endblock %}

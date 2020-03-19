@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+  
+{% block body %}
+<form method="POST" action="{{ url_for('movement_create') }}">
+  <input type="text" name="name"/>
+  <input type="text" name="muscleGroup"/>
+  <input type="submit" value="Add a new movement"/>
+</form>
+{% endblock %}

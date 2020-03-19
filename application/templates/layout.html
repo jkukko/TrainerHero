@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TrainerHero</title>
+  </head>
+
+  <body>
+    <ul>
+      <li><a href="{{ url_for('movements_index') }}">List movements</a></li>
+      <li><a href="{{ url_for('movement_form') }}">Add a new movement</a></li>      
+    </ul>
+    {% block body %}
+      <p>
+        Content.
+      </p>
+    {% endblock %}
+  </body>
+</html
