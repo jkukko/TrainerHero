@@ -1,4 +1,5 @@
 from flask import render_template, request, redirect, url_for
+from flask_login import login_required
 
 from application import app, db
 from application.movements.models import Movement
@@ -9,10 +10,12 @@ def movements_index():
     return render_template("movements/list.html", movements = Movement.query.all())
 
 @app.route("/movements/new/")
+@login_required
 def movement_form():
     return render_template("movements/new_movement.html", form = MovementForm())
 
 @app.route("/movements/<movement_id>", methods=["POST"])
+@login_required
 def add_movement_template(movement_id):
     m = Movement.query.get(movement_id)
     if m.isTemplate == True:
@@ -24,6 +27,7 @@ def add_movement_template(movement_id):
 
 
 @app.route("/movements/", methods=["POST"])
+@login_required
 def movement_create():
     form = MovementForm(request.form)
 
