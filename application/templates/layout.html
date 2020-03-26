@@ -6,6 +6,13 @@
   </head>
 
   <body>
+    {% if current_user.is_authenticated %}
+    <p>
+    Kirjautunut nimellä {{ current_user.name }}. <a href="{{ url_for('auth_logout') }}">Kirjaudu ulos</a>
+    </p>
+    {% else %}
+    <a href="{{ url_for('auth_login') }}">Kirjaudu</a>
+    {% endif %}   
     <ul>
       <li><a href="{{ url_for('movements_index') }}">List movements</a></li>
       <li><a href="{{ url_for('movement_form') }}">Add a new movement</a></li>      
