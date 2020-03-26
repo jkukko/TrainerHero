@@ -1,6 +1,8 @@
+from flask import render_template, request, redirect, url_for
+
 from application import app, db
-from flask import render_template, request, url_for, redirect
 from application.movements.models import Movement
+from application.movements.forms import MovementForm
 
 @app.route("/movements", methods=["GET"])
 def movements_index():
@@ -8,7 +10,7 @@ def movements_index():
 
 @app.route("/movements/new/")
 def movement_form():
-    return render_template("movements/new_movement.html")
+    return render_template("movements/new_movement.html", form = MovementForm())
 
 @app.route("/movements/<movement_id>", methods=["POST"])
 def add_movement_template(movement_id):
@@ -23,10 +25,12 @@ def add_movement_template(movement_id):
 
 @app.route("/movements/", methods=["POST"])
 def movement_create():
-    name = request.form.get("name")
-    muscleGroup = request.form.get("muscleGroup")
+    form = MovementForm(request.form)
 
-    M = Movement(name, muscleGroup) 
+    if not form.validate():
+        return render_template("movements/new_movement.html", form = form)
+
+    M = Movement(form.name.data, form.muscleGroup.data)
 
     db.session().add(M)
     db.session().commit()

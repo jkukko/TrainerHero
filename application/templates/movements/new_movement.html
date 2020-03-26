@@ -1,9 +1,42 @@
 {% extends "layout.html" %}
-  
+
 {% block body %}
 <form method="POST" action="{{ url_for('movement_create') }}">
-  <input type="text" name="name"/>
-  <input type="text" name="muscleGroup"/>
-  <input type="submit" value="Add a new movement"/>
+  <table>
+    <tr>
+      <td>
+        {{ form.name.label }}
+      </td>
+      <td>
+        {{ form.name }}
+      </td>
+      <td>
+        <ul>
+          {% for error in form.name.errors %}
+          <li>{{ error }}</li>
+          {% endfor %}
+        </ul>
+      </td>      
+    </tr>
+    <tr>
+      <td>
+        {{ form.muscleGroup.label }}
+      </td>
+      <td>
+        {{ form.muscleGroup }}
+      </td>
+      <td>
+        <ul>
+          {% for error in form.name.errors %}
+          <li>{{ error }}</li>
+          {% endfor %}
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3">
+        <input type="submit" value="Add a new Movement"/>
+      </td>
+    </tr>
 </form>
 {% endblock %}

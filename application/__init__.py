@@ -12,4 +12,10 @@ from application import views
 from application.movements import models
 from application.movements import views
 
+from application.muscle_group import models
+from application.muscle_group import views
+
+from application.auth import models
+from application.auth import views
+
 db.create_all()

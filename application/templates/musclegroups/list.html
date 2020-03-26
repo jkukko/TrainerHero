@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block body %}
+  <table>
+    <tr>
+      <th>Muscle Group</th>
+    </tr>
+    {% for musclegroup in musclegroups %}
+    <tr>
+      <td>{{ musclegroup.name }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+{% endblock %}
