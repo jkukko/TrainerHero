@@ -6,6 +6,7 @@ from application.movements.models import Movement
 from application.movements.forms import MovementForm
 
 @app.route("/movements", methods=["GET"])
+@login_required
 def movements_index():
     return render_template("movements/list.html", movements = Movement.query.all())
 

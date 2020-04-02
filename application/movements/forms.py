@@ -7,3 +7,4 @@ class MovementForm(FlaskForm):
  
     class Meta:
         csrf = False
+

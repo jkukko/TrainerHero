@@ -1,7 +1,7 @@
 from application import db
+from application.models import Base
 
-class Movement(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
+class Movement(Base):
     name = db.Column(db.String(144), nullable=False)
     muscleGroup = db.Column(db.String(144), nullable=False)
     isTemplate = db.Column(db.Boolean, nullable=False)
