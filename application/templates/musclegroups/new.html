@@ -1,8 +1,19 @@
 {% extends "layout.html" %}
   
 {% block body %}
+<h3>Add ne mucle group</h3>
 <form method="POST" action="{{ url_for('musclegourp_create') }}">
   <input type="text" name="name"/>
   <input type="submit" value="Add a new musclegroup"/>
 </form>
+<table>
+  <tr>
+    <th>Muscle Groups</th>
+  </tr>
+  {% for m in musclegroups %}
+  <tr>
+    <th>{{ m.name }}</th>
+  </tr>
+  {% endfor %}
+</table>
 {% endblock %}

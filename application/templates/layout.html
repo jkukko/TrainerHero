@@ -21,8 +21,16 @@
           <li class="nav-item">
             <a class="nav-link" href="{{ url_for('movement_form') }} ">Create a movement</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('musclegroup_form') }}">Create a muscle group</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('set_form') }}">Add new set</a>
+          </li>
         </ul>
-        <div class="form-inline mt-2 mt-md-0">
+        <div class="form-inline mt-2 mt-md-0"ohjelmiston
+        käyttöönottovaiheessa
+         Monesti ohjelmisto toteutetaan >
           {% if current_user.is_authenticated %}
           <a href="{{ url_for('auth_logout') }}">Hello {{ current_user.name }} -- Logout</a>
           {% else %}

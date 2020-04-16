@@ -13,17 +13,20 @@ else:
 
 db = SQLAlchemy(app)
 
-# Sovellukseksen toiminnallisuudet
+# Sovellukseksen toiminnallmusclegroup_formisuudet
 from application import views
 
 from application.movements import models
 from application.movements import views
 
-from application.muscle_group import models
-from application.muscle_group import views
+from application.muscleGroup import models
+from application.muscleGroup import views
 
 from application.auth import models
 from application.auth import views
+
+from application.sets import models
+from application.sets import views
 
 # kirjautuminen
 from application.auth.models import User
@@ -40,6 +43,7 @@ login_manager.login_message = "Please login to use this functionality."
 @login_manager.user_loader
 def load_user(user_id):
     return User.query.get(user_id)
+
 
 try:
     db.create_all()

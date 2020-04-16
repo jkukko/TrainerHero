@@ -9,7 +9,6 @@ class LoginForm(FlaskForm):
         csrf = False
 
 class CreateAccount(FlaskForm):
-    name = StringField("Name")
     username = StringField("Username")
     password = PasswordField("Password")
 

@@ -1,11 +1,13 @@
 {% extends "layout.html" %}
 
 {% block body %}
-  <table>
+  <table class="table table-bordered">
     <tr>
       <th>Movement</th>
       <th>Muscle Group</th>
       <th>Is this basic movement</th>
+      <th>Make movement as a universal</th>
+      <th>Delete movement</th>
     </tr>
     {% for movement in movements %}
     <tr>
@@ -17,6 +19,11 @@
             <input type="submit" value="Change status"/>
           </form>
       </td>
+      <td>
+        <form method="POST" action="{{ url_for('remove_movement', movement_id=movement.id) }}">
+          <input type="submit" value="Delete movement"/>
+        </form>
+    </td>
     </tr>
     {% endfor %}
   </table>

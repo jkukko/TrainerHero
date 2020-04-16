@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<form method="POST" action="{{ url_for('set_create') }}">
+    <table>
+        <tr>
+            <td>
+                {{ form.movement.label }}
+            </td>
+            <td>
+                {{ form.movement }}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                {{ form.reps.label }}
+            </td>
+            <td>
+                {{ form.reps }}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                {{ form.weigth.label }}
+            </td>
+            <td>
+                {{ form.weigth }}
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <input type="submit" value="Save new set">
+            </td>
+        </tr>
+    </table>
+</form>
+
+{% endblock %}
