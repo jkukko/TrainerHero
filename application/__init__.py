@@ -28,6 +28,8 @@ from application.auth import views
 from application.sets import models
 from application.sets import views
 
+from application.associations import workout_movement
+
 # kirjautuminen
 from application.auth.models import User
 from os import urandom
