@@ -13,6 +13,7 @@ else:
 
 db = SQLAlchemy(app)
 
+
 # Sovellukseksen toiminnallmusclegroup_formisuudet
 from application import views
 

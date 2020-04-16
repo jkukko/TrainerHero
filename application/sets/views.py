@@ -12,6 +12,7 @@ def sets_index():
     return render_template("sets/list.html", sets=set.query.all())
 
 @app.route("/sets/new", methods=["GET"])
+@login_required
 def set_form():
     m = Movement.query.all()
     names = [(i.id, i.name) for i in m]
