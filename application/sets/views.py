@@ -24,10 +24,16 @@ def set_form():
 def set_create():
     m = Movement.query.all()
     names = [(i.id, i.name) for i in m]
-    form = SetForm()
+    form = SetForm(request.form)
     form.movement.choices = names
 
-    if not form.validate():
-        return render_template("sets/new.html", form=form)
+    #if not form.validate():
+    #    return render_template("sets/new.html", form=form)
+
+    S = Set(form.reps.data, form.weigth.data, form.movement.data)
+    db.session().add(S)
+    db.session().commit()
+
+    return redirect(url_for("set_form"))
 
     
